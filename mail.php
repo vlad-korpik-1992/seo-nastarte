@@ -14,7 +14,6 @@
     require 'phpmailer/SMTP.php';
     
     $name = $_POST['name'];
-    $email = $_POST['email'];
     $phone = $_POST['phone'];
     $answer = $_POST['answer'];
     $message = $_POST['message'];
@@ -54,16 +53,27 @@
     <b>Имя:</b> $name<br>
 
     <b>Мобильный номер телефона:</b> $phone<br>
-    
-    <b>Email:</b> $email<br>
 
     <b>Планируемый бюджет:</b> $answer<br>
     
     <b>Сообщение:</b> $message<br/>
 
     ");
+    
+    $messageTelegram = "<b>Заявка с сайта</b> web.nastarte.by %0A<b>Имя:</b> ".$name."%0A<b>Телефон:</b> ".$phone. "%0A<b>Планируемый бюджет:</b> ".$answer. "%0A<b>Сообщение:</b> ".$message;
+    $token = '';
+    $chat_id = '';
+    $sendTextToTelegram = file_get_contents("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$messageTelegram}");
+    
+    if($sendTextToTelegram){
+        echo "ok";
+    }else{
+        echo "Error";
+    }
 
     $mail->addAddress('v.korpik2010@yandex.com');
+    $mail->addAddress('pm@nastarte.by');
+    $mail->addAddress('sales@nastarte.by');
 
     if(!$mail->send()) {
 

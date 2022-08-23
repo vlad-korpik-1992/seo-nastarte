@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    $('.menu__btn').on('click', function (e) {
+    /*$('.menu__btn').on('click', function (e) {
         e.preventDefault();
         $('.menu__list').toggleClass('menu__list--active');
-    });
+    });*/
 
     $('.hero__center__box').on('click', function (e) {
         e.preventDefault();
@@ -40,22 +40,6 @@ $(document).ready(function() {
                 return false;
             }
         }
-        x =  document.getElementById('email').value;
-        if (x === "") {
-            document.getElementById('status').textContent = "Укажите Ваш E-mail";
-            return false;
-        } else {
-            let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            if(!re.test(x)){
-                document.getElementById('status').textContent = "Некорректный E-mail";
-                return false;
-            }
-        }
-        x =  document.getElementById('message').value;
-        if (x === "") {
-            document.getElementById('status').textContent = "Вы не написали Ваших пожеланий";
-            return false;
-        }
 
         document.getElementById('status').classList.remove('error');
         document.getElementById('status').textContent = "Отправка...";
@@ -72,7 +56,6 @@ $(document).ready(function() {
 
         const formData = {
             'name': $('input[name=firstname]').val(),
-            'email': $('input[name=email]').val(),
             'phone': $('input[name=phone]').val(),
             'answer': answer,
             'message': $('textarea[name=message]').val(),
@@ -95,31 +78,7 @@ $(document).ready(function() {
             }
         });
     });
-
-});
-/* Header fixed */
-$(function() {
-	let header = $('.header');
-    let logo = $('.logo');
-	let hederHeight = header.height();
-	$(window).scroll(function() {
-	  let height = $(window).scrollTop();
-	  if($(this).scrollTop() > 1) {
-	  	header.addClass('header--fixed');
-        logo.addClass('logo--small');
-	    $('body').css({
-		  'paddingTop': hederHeight+'px'
-	   	});
-	  	} else {
-	   		header.removeClass('header--fixed');
-            logo.removeClass('logo--small');
-	   		$('body').css({
-				'paddingTop': 0
-	   		})
-	  	}
-	});
-
-
+    
     $('#send-sidebar').click(function(e) {
         e.preventDefault();
         document.getElementById('status-sidebar').classList.add('form__error--pt');
@@ -139,22 +98,6 @@ $(function() {
                 return false;
             }
         }
-        x =  document.getElementById('email-sidebar').value;
-        if (x === "") {
-            document.getElementById('status-sidebar').textContent = "Укажите Ваш E-mail";
-            return false;
-        } else {
-            let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            if(!re.test(x)){
-                document.getElementById('status-sidebar').textContent = "Некорректный E-mail";
-                return false;
-            }
-        }
-        x =  document.getElementById('message-sidebar').value;
-        if (x === "") {
-            document.getElementById('status-sidebar').textContent = "Вы не написали Ваших пожеланий";
-            return false;
-        }
 
         document.getElementById('status-sidebar').classList.remove('error');
         document.getElementById('status-sidebar').textContent = "Отправка...";
@@ -171,7 +114,6 @@ $(function() {
 
         const formData = {
             'name': $('input[name=firstname-sidebar]').val(),
-            'email': $('input[name=email-sidebar]').val(),
             'phone': $('input[name=phone-sidebar]').val(),
             'answer': answerSidebar,
             'message': $('textarea[name=message-sidebar]').val(),
@@ -206,15 +148,15 @@ $(function() {
 	  if($(this).scrollTop() > 1) {
 	  	header.addClass('header--fixed');
         logo.addClass('logo--small');
-	    $('body').css({
+	    /*$('body').css({
 		  'paddingTop': hederHeight+'px'
-	   	});
+	   	});*/
 	  	} else {
 	   		header.removeClass('header--fixed');
             logo.removeClass('logo--small');
-	   		$('body').css({
+	   		/*$('body').css({
 				'paddingTop': 0
-	   		})
+	   		})*/
 	  	}
 	});
 });

@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
     <title>Seo NaStarte</title>
 </head>
 <body>
+    <div class="cursor"></div>
     <div class="sidebar__overlay"></div>
     <section class="hero">
         <img class="hero__img--top" src="img/hero-top-right.png" alt="">
@@ -21,15 +23,9 @@
                     </div>
                     <div class="header__items">
                         <nav class="menu">
-                            <a href="#" class="menu__btn">
-                                <span class="menu__btn-element"></span>
-                            </a>
                             <ul class="menu__list">
-                                <a href="#" class="menu__btn menu__btn--close">
-                                    <span class="menu__btn-element menu__btn-element_close"></span>
-                                </a>
                                 <li class="menu__list__items scrollto">
-                                    <a class="menu__link" href="#benefits">Почему мы</a>
+                                    <a class="menu__link" href="#present">Акции</a>
                                 </li>
                                 <li class="menu__list__items scrollto">
                                     <a class="menu__link" href="#development">Что делаем</a>
@@ -46,14 +42,14 @@
                 </div>
             </div>
             <div class="hero__box">
-                <h1 class="hero__title">Современная веб-разработка</h1>
-                <p>Делаем корпоративные сайты и интернет-магазины любой сложности</p>
+                <h1 class="hero__title" data-aos="fade-up" data-aos-duration="400">Современная веб-разработка</h1>
+                <p data-aos="fade-up" data-aos-duration="800">Делаем корпоративные сайты и интернет-магазины любой сложности</p>
             </div>
-            <div class="present">
-                <h2 class="section-title section-title--white">Подарки при заказе интернет-магазина</h2>
+            <div class="present" id="present">
+                <h2 data-aos="fade-up" data-aos-duration="1200" class="section-title section-title--white">Подарки при заказе интернет-магазина</h2>
                 <div class="box">
                     <div class="present__box__items">
-                        <div class="present__box__items__inside">
+                        <div data-aos="fade-up" data-aos-duration="200" class="present__box__items__inside">
                             <div class="present__box__items__head">
                                 <p class="present__title">Домен</p>
                                 <p class="present__content">Онлайн-адрес сайта, место его размещения в интернете</p>
@@ -62,16 +58,16 @@
                         </div>
                     </div>
                     <div class="present__box__items">
-                        <div class="present__box__items__inside present__box__items__inside--white">
+                        <div data-aos="fade-up" data-aos-duration="400" class="present__box__items__inside present__box__items__inside--white">
                             <div class="present__box__items__head">
                                 <p class="present__title">Хостинг</p>
-                                <p class="present__content">Размещению сайта или иного контента на сервере</p>
+                                <p class="present__content">Размещение сайта или иного контента на сервере</p>
                             </div>
                             <p class="present__footer present__footer--size">3 месяца</p>
                         </div>
                     </div>
                     <div class="present__box__items">
-                        <div class="present__box__items__inside present__box__items__inside--green">
+                        <div data-aos="fade-up" data-aos-duration="600" class="present__box__items__inside present__box__items__inside--green">
                             <div class="present__box__items__head">
                                 <p class="present__title">Контент</p>
                                 <p class="present__content">10 000 символов уникального контента</p>
@@ -80,16 +76,16 @@
                         </div>
                     </div>
                     <div class="present__box__items">
-                        <div class="present__box__items__inside">
+                        <div data-aos="fade-up" data-aos-duration="800" class="present__box__items__inside">
                             <div class="present__box__items__head">
-                                <p class="present__title">5 часов</p>
-                                <p class="present__content">5 часов работы любого специалиста</p>
+                                <p class="present__title">Рабочее время</p>
+                                <p class="present__content">5 часов любого специалиста</p>
                             </div>
                             <img class="present__img--clock" src="img/present-clock.png" alt="">
                         </div>
                     </div>
                     <div class="present__box__items">
-                        <div class="present__box__items__inside">
+                        <div data-aos="fade-up" data-aos-duration="1000" class="present__box__items__inside">
                             <div class="present__box__items__head">
                                 <p class="present__title">Визуал</p>
                                 <p class="present__content">3 рекламных баннера для вашего нового сайта</p>
@@ -99,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero__center">
+            <div class="hero__center" data-aos="fade-up" data-aos-duration="800">
                 <a class="hero__center__box" href="#">
                     <img class="hero__center__stars hero__center__stars--left" src="img/hero-stars.png" alt="">
                     <div class="hero__center__link">Заказать сайт</div>
@@ -108,12 +104,12 @@
             </div>
         </div>
     </section>
-    <section class="benefits" id="benefits">
+    <section class="benefits">
         <div class="wrapper">
             <h2 class="section-title">Преимущества разработки сайта в NaStarte</h2>
         </div>
         <div class="box box--scroll">
-            <div class="benefits__items">
+            <div data-aos="fade-up" data-aos-duration="200" class="benefits__items">
                 <div class="benefits__items__inside">
                     <p>С каждым заказчиком заключается договор, в котором прописываются сроки выполнения проекта и ответственность за их несоблюдение. Если вы ищете тех, кто сделает быстро и хорошо, тогда мы вам подходим. Ведь наша команда понимает, что время – деньги.</p>
                 </div>
@@ -121,7 +117,7 @@
                     <p>Без срыва дедлайна и дополнительных платежей</p>
                 </div>
             </div>
-            <div class="benefits__items">
+            <div data-aos="fade-up" data-aos-duration="600" class="benefits__items">
                 <div class="benefits__items__inside">
                     <p>Все разработанные нами сайты имеют эффектный дизайн, понятный пользователям. Каждый из них разрабатывается с нуля по запросу клиента, с учетом целей, особенностей целевой аудитории и тенденций мирового веб-дизайна.</p>
                 </div>
@@ -129,7 +125,7 @@
                     <p>Эксклюзивный wow-дизайн</p>
                 </div>
             </div>
-            <div class="benefits__items">
+            <div data-aos="fade-up" data-aos-duration="1000" class="benefits__items">
                 <div class="benefits__items__inside">
                     <p>Мы берем вашу идею, добавляем свою экспертность и опыт, требования поисковых систем и разрабатываем идеальный интернет-проект под ваш бизнес. У нас достаточно опыта, чтобы с уверенностью говорить: «Для нас нет ничего невозможного».</p>
                 </div>
@@ -137,7 +133,7 @@
                     <p>Высшее качество разработки</p>
                 </div>
             </div>
-            <div class="benefits__items">
+            <div data-aos="fade-up" data-aos-duration="1400" class="benefits__items">
                 <div class="benefits__items__inside">
                     <p>Продающий ресурс под ключ, который на 100% достигает поставленных целей. Выполняем весь комплекс веб-услуг по созданию маркетингового инструмента для деятельности в интернете: от разработки веб-сайта до его продвижения.</p>
                 </div>
@@ -146,7 +142,7 @@
                 </div>
             </div>
         </div>
-        <div class="benefits__box">
+        <div data-aos="fade-up" data-aos-duration="1800" class="benefits__box">
             <img class="share" src="img/benefits-share.png" alt="">
         </div>
     </section>
@@ -157,7 +153,7 @@
         <div class="development__box">
             <div class="wrapper">
                 <div class="box">
-                    <div class="development__items">
+                    <div data-aos="fade-left" data-aos-duration="800" class="development__items">
                         <div class="development__items__info">
                             <h3 class="development__items__title">Landing page</h3>
                             <p>Продающий одностраничник, цель которого конвертировать посетителей сайта в покупателей.</p>
@@ -172,14 +168,14 @@
                         </div>
                     </div>
                     <div class="development__center">
-                        <div class="development__center__inner">
+                        <div class="development__center__inner" data-aos="fade-up" data-aos-duration="3000">
                             <img class="development__stars" src="img/development-stars.png" alt="">
                             <h3 class="development__items__title">Порталы и веб-сервисы</h3>
                             <p class="development__center__text">Мы разрабатываем все виды порталов: информационные, образовательные, корпоративные, новостные, а такжн создаем различные веб-сервисы.</p>
                             <p>Опыт и навык наших специалистов позволяют выполнить любую задачу.</p>
                         </div>
                     </div>
-                    <div class="development__items">
+                    <div data-aos="fade-right" data-aos-duration="800" class="development__items">
                         <div class="development__items__info">
                             <h3 class="development__items__title">Сайт-каталог</h3>
                             <p>Интернет-витрина для презентации каталога вашей продукции без возможности покупки онлайн.</p>
@@ -197,14 +193,14 @@
         <img class="numbers__circle" src="img/number-circle.png" alt="">
         <div class="wrapper">
             <div class="box box--center">
-                <div class="numbers__items numbers__items--jb">
+                <div data-aos="fade-left" data-aos-duration="800" class="numbers__items numbers__items--jb">
                     <p class="numbers__text">СТОЛЬКО КЛИЕНТОВ <br> УЖЕ УШЛИ К ВАШИМ <br> КОНКУРЕНТАМ</p>
                     <img class="numbers__img" src="img/number-right.png" alt="">
                 </div>
                 <div class="numbers__items numbers__items--width">
-                    <p class="numbers__title">1240 <img class="numbers__star" src="img/number-star.png" alt=""></p>
+                    <p class="numbers__title numscroller" data-min='1' data-max='1240' data-delay='5' data-increment='5'>1240</p>
                 </div>
-                <div class="numbers__items">
+                <div data-aos="fade-right" data-aos-duration="800" class="numbers__items">
                     <div class="hero__center hero__center--m0">
                         <div class="hero__center__box">
                             <img class="hero__center__stars numbers__center__stars--left" src="img/hero-stars.png" alt="">
@@ -218,35 +214,36 @@
     </section>
     <section class="project" id="project">
         <div class="wrapper">
-            <h2 class="section-title section-title--project">Проекты</h2>
+            <h2 class="section-title section-title--project">Наши крайние работы</h2>
             <div class="box">
-                <div class="project__items">
-                    <img class="project__img" src="img/project-img-1.png" alt="">
+                <a data-aos="flip-left" data-aos-duration="800" class="project__items" href="https://arslilia.by/" target="_blank">
+                    <img class="project__img" src="img/project-img-1.png" alt="Разработка интернет-магазина для сети цветочных салонов">
                     <div class="project__items__footer">
                         <span class="project__content">Разработка интернет-магазина для сети цветочных салонов</span>
                     </div>
-                </div>
-                <div class="project__items">
+                </a>
+                <a data-aos="flip-up" data-aos-duration="1200" class="project__items" href="https://advocate-grodno.by/" target="_blank">
                     <div class="project__items__bg--yellow"></div>
                     <div class="project__items__bg--blue"></div>
-                    <img class="project__img project__img__mt" src="img/project-img-2.png" alt="">
+                    <img class="project__img project__img__mt" src="img/project-img-2.png" alt="Разработка корпоративного сайта для адвоката юридической консультации">
                     <div class="project__items__footer">
                         <span class="project__content">Разработка корпоративного сайта для адвоката юридической консультации</span>
                     </div>
-                </div>
-                <div class="project__items">
-                    <img class="project__img" src="img/project-img-3.png" alt="">
+                </a>
+                <a data-aos="flip-right" data-aos-duration="1600" class="project__items" href="https://lilugrodno.by/" target="_blank">
+                    <img class="project__img" src="img/project-img-3.png" alt="Разработка интернет-магазина для сети цветочных салонов">
                     <div class="project__items__footer">
                         <span class="project__content">Разработка интернет-магазина для сети цветочных салонов</span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="benefits__box">
             <img class="project-share" src="img/project-share.png" alt="">
         </div>
         <div class="wrapper">
-            <div class="footer__form" id="form-box">
+            <h2 class="section-title section-title--footer">Получайте результат от своего бизнеса уже сегодня!</h2>
+            <div data-aos="fade-right" data-aos-duration="800" class="footer__form" id="form-box">
                 <form class="form" action="#" id="footer-form">
                     <div class="box">
                         <div class="form__items">
@@ -254,8 +251,6 @@
                             <input class="form__items__input" type="text" name="firstname" id="firstname">
                             <label class="form__items__label" for="phone">Телефон</label>
                             <input class="form__items__input" type="text" name="phone" id="phone">
-                            <label class="form__items__label" for="email">Email</label>
-                            <input class="form__items__input" type="text" name="email" id="email">
                             <label class="form__items__label">Планируемый бюджет</label>
                             <div class="form__items__radio">
                                 <div class="form__items__radio__items">
@@ -274,11 +269,11 @@
                         </div>
                         <div class="form__items">
                             <label class="form__items__label" for="message">Ваши пожелания</label>
-                            <textarea class="form__items__input" name="message" id="message" cols="30" rows="15"></textarea>
+                            <textarea class="form__items__input" name="message" id="message" cols="30" rows="8"></textarea>
                         </div>
                     </div>
                     <div class="form__fotter">
-                        <button class="hero__center__link hero__center__link--ptb form__btn" type="submit" id="send">Оставить заявку</button>
+                        <a class="hero__center__link hero__center__link--ptb form__btn" type="submit" id="send">Оставить заявку</a>
                     </div>
                     <div class="form__error error" id="status"></div>
                 </form>
@@ -289,23 +284,28 @@
         <img class="hero__img--bottom-right" src="img/footer-top-right.png" alt="">
         <img class="hero__img--bottom" src="img/footer-bottom-left.png" alt="">
         <div class="wrapper">
-            <div class="header__items">
-                <nav class="menu">
-                    <ul class="menu__list menu__list--footer">
-                        <li class="menu__list__items scrollto">
-                            <a class="menu__link menu__link--footer" href="#benefits">Почему мы</a>
-                        </li>
-                        <li class="menu__list__items scrollto">
-                            <a class="menu__link menu__link--footer" href="#development">Что делаем</a>
-                        </li>
-                        <li class="menu__list__items scrollto">
-                            <a class="menu__link menu__link--footer" href="#project">Портфолио</a>
-                        </li>
-                        <li class="menu__list__items scrollto">
-                            <a class="menu__link menu__link--footer" href="#form-box">Оставить заявку</a>
-                        </li>
+            <div class="footer__list">
+                <div class="footer__item">
+                    <a class="phone" href="tel:+375333030430">375 33 303-04-30</a>
+                    
+                    <ul class="header__list">
+                        <li class="header__list-item header__list-item_blue"><a class="footer__link" href="https://t.me/NastarteBy" target="_blank">telegram</a></li>
+                        <li class="header__list-item header__list-item_red"><a class="footer__link" href="viber://add?number=375333030430" target="_blank">viber</a></li>
+                        <li class="header__list-item header__list-item_green"><a class="footer__link" href="whatsapp://send?phone=+375333030430" target="_blank">whatsapp</a></li>
                     </ul>
-                </nav>
+                </div>
+
+                <div class="footer__item">
+                    <a class="phone" href="mailto:sales@nastarte.by">sales@nastarte.by</a>
+
+
+                    <div class="social">
+                        <a class="social__link" href="https://www.instagram.com/nastarte.by/" target="_blank"><img src="img/instagram.png" alt="Instagram NaStarte"></a>
+                        <a class="social__link" href="https://www.facebook.com/webnastarte" target="_blank"><img src="img/facebook.png" alt="Facebook NaStarte"></a>
+                        <a class="social__link" href="https://twitter.com/nastarte_by" target="_blank"><img src="img/twitter.png" alt="Twitter NaStarte"></a>
+                        <a class="social__link" href="https://www.linkedin.com/company/nastarte-by/" target="_blank"><img src="img/linkedin.png" alt=""></a>
+                    </div>
+                </div>
             </div>
             <div class="footer__box">
                 <h2 class="hero__title">Современная веб-разработка</h2>
@@ -326,8 +326,6 @@
                         <input class="form__items__input" type="text" name="firstname-sidebar" id="firstname-sidebar">
                         <label class="form__items__label" for="phone">Телефон</label>
                         <input class="form__items__input" type="text" name="phone-sidebar" id="phone-sidebar">
-                        <label class="form__items__label" for="email">Email</label>
-                        <input class="form__items__input" type="text" name="email-sidebar" id="email-sidebar">
                         <label class="form__items__label">Планируемый бюджет</label>
                         <div class="form__items__radio">
                             <div class="form__items__radio__items">
@@ -346,7 +344,7 @@
                     </div>
                     <div class="form__items">
                         <label class="form__items__label" for="message">Ваши пожелания</label>
-                        <textarea class="form__items__input" name="message-sidebar" id="message-sidebar" cols="30" rows="15"></textarea>
+                        <textarea class="form__items__input" name="message-sidebar" id="message-sidebar" cols="30" rows="8"></textarea>
                     </div>
                 </div>
                 <div class="form__fotter">
@@ -357,8 +355,15 @@
         </div>
     </section>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.numscroller.js"></script>
     <script src="js/main.js"></script>
-    <script>  
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script> 
+        AOS.init();
+        $(":input").inputmask();
+        $("#phone").inputmask({"mask": "+375999999999"});
+        $("#phone-sidebar").inputmask({"mask": "+375999999999"});
         const slider = document.querySelector('.box--scroll');
         let mouseDown = false;
         let startX, scrollLeft;
@@ -383,6 +388,47 @@
         slider.addEventListener('mousedown', startDragging, false);
         slider.addEventListener('mouseup', stopDragging, false);
         slider.addEventListener('mouseleave', stopDragging, false);
+    </script>
+    <script>
+        /*$(document).ready(function() {
+            var show = true;
+            var countbox = ".box";
+            $(window).on("scroll load resize", function () {
+                if (!show) return false; 
+                var w_top = $(window).scrollTop();
+                var e_top = $(countbox).offset().top;
+                var w_height = $(window).height();
+                var d_height = $(document).height();
+                var e_height = $(countbox).outerHeight();
+                if (w_top >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+                    $('.numbers__title').spincrement({
+                        thousandSeparator: "",
+                        duration: 3000
+                    });
+    
+                    show = false;
+                }
+            });
+        });*/
+        document.addEventListener('DOMContentLoaded', function(){
+            const cursor = document.querySelector('.cursor');
+        
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            })
+        
+            const paragraph = document.querySelectorAll('a').forEach(element => {
+                element.addEventListener('mouseover', () => {
+                    cursor.style.transform = 'scale(3)';
+                }, false);
+        
+                element.addEventListener('mouseleave', () => {
+                    cursor.style.transform = 'scale(1)';
+                }, false);
+            });
+        
+        });
     </script>
 </body>
 </html>

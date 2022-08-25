@@ -502,7 +502,7 @@ section{
     z-index: 3;
 }
 .project__content{
-    font-size: 24px;
+    font-size: 26px;
     line-height: 30px;
     color: #fff;
     background-color: #000;
@@ -554,7 +554,7 @@ section{
 }
 .footer{
     position: relative;
-    padding: 135px 0 45px;
+    padding: 120px 0 90px;
     background-color: #1e282a;
 }
 .footer__box{
@@ -845,6 +845,7 @@ section{
     }
     .hero__img--bottom-right{
         width: 60%;
+        height: 100%;
     }
     .sidebar__back {
         width: 32px;
@@ -905,7 +906,7 @@ section{
         bottom: 76px;
     }
     .hero__img--bottom-right{
-        width: 50%;
+        width: 45%;
         top: 0;
     }
     .phone {
@@ -966,11 +967,6 @@ section{
         max-width: 100%; 
     }
     .hero__img--bottom-right {
-        width: 100%;
-        top: inherit;
-        bottom: 0;
-    }
-    .hero__img--bottom{
         display: none;
     }
     .numbers__title{
